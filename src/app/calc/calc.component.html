@@ -1,0 +1,38 @@
+<h1>
+    Ashish's Calculator
+</h1>
+<table align=center border="1">
+    <tr>
+        <td colspan="5">
+        <input [(ngModel)] ="result" type="textbox" name="dispVal" style="text-align:right;">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="button" class ="button" value="7" (click)="setNumbers('7')"></td>
+        <td><input type="button" class ="button" value="8" (click)="setNumbers('8')"></td>
+        <td><input type="button" class ="button" value="9" (click)="setNumbers('9')"></td>
+        <td><input type="button" class ="button" value="/" (click)="setOperator('/')"></td>
+        <td><input type="button" class ="button" value="C" (click)='clear()'></td>
+    </tr>
+    <tr>
+        <td><input type="button" class ="button" value="4" (click)="setNumbers('4')"></td>
+        <td><input type="button" class ="button" value="5" (click)="setNumbers('5')"></td>
+        <td><input type="button" class ="button" value="6" (click)="setNumbers('6')"></td>
+        <td><input type="button" class ="button" value="*" (click)="setOperator('*')"></td>
+        <td><input type="button" class ="button" value="^" (click)="setOperator('^')"></td>
+    </tr>
+    <tr>
+        <td><input type="button" class ="button" value="1" (click)="setNumbers('1')"></td>
+        <td><input type="button" class ="button" value="2" (click)="setNumbers('2')"></td>
+        <td><input type="button" class ="button" value="3" (click)="setNumbers('3')"></td>
+        <td><input type="button" class ="button" value="-" (click)="setOperator('-')"></td>
+        <td><input type="button" class ="button" value="√" (click)="sqRoot()"></td>
+        
+    </tr>
+    <tr>
+        <td colspan="2"><input type="button" class ="button" value="0" (click)="setNumbers('0')" style="width: 100%;"></td>
+        <td><input type="button" class ="button" value="." (click)="setNumbers('.')"></td>
+        <td><input type="button" class ="button" value="+" (click)="setOperator('+')"></td>
+        <td><input type="button" class ="button" value="=" (click)='calculate()'></td>
+    </tr>
+</table>
